@@ -74,6 +74,12 @@ main section.categories-show {
 
     }
   }
+  .orders {
+    div.total-text {
+      align-items: right;
+      // text-align: right;
+    }
+  }
 }
 
 main section.products-show {
