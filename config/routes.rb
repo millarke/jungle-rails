@@ -4,6 +4,11 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
+  
+  # TODO why doesn't the below line work?
+  # resource :about, only: [:show]
+  # is there a way to generate these / update the routes with a command in terminal?
+  get 'about', to: 'about#show'
 
   resource :cart, only: [:show] do
     post   :add_item
